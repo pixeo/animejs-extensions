@@ -2,7 +2,7 @@ import * as deepmerge from 'deepmerge';
 import anime from 'animejs/lib/anime.es';
 import intersector, { EVENT_NAME } from './intersector';
 import { $$ } from './selectors';
-import defaultOptions from './animations';
+import defaultOptions from './default';
 
 const STATE = {
     INTERSECT: 'intersect',
@@ -72,9 +72,9 @@ const animator = (opts = {}) => {
     });
 };
 
-export default () => {
+export default (options) => {
     intersector($$(`[data-animation-on="${STATE.INTERSECT}"]`), {
         once: true,
     });
-    animator();
+    animator(options);
 };

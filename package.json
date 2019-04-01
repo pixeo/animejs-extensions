@@ -1,7 +1,7 @@
 {
   "name": "animejs-extensions",
   "version": "0.1.0",
-  "description": "Small extention package to use animejs with eg. data-attributes",
+  "description": "Extension package to use animejs with eg. data-attributes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,5 +24,8 @@
     "eslint-loader": "^2.1.1",
     "eslint-plugin-import": "^2.14.0",
     "prettier": "^1.15.3"
+  },
+  "dependencies": {
+    "animejs": "^3.0.1"
   }
 }
